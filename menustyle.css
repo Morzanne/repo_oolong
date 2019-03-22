@@ -1,0 +1,159 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: black; 
+    width: 100%;
+    margin: auto;
+}
+
+.logo{
+    color: white;
+    font-family: 'Bowlby One', cursive;
+    font-size: 4rem;
+    font-weight: bold;
+}
+/*recherche*/
+.form-control{
+    background-color: black;
+    border-bottom-color: linear-gradient(to right, #f30a0a 0%, #9c0324 51%, #630413 100%);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+::placeholder{
+    color: grey;
+    background-color: black;
+    color: white;
+    font-size: 2rem;
+    height: 100%;
+    
+    width: 100%;
+}
+
+/* se connecter*/
+.btn{
+    border-color: linear-gradient(to right, #f30a0a 0%, #f6d365 51%, #8f2305 100%); 
+    
+}
+.btn:hover{
+    background-image: linear-gradient(to right, #f30a0a 0%, #f6d365 51%, #8f2305 100%);
+}
+.btn{
+    font-size: 2rem;
+   
+}
+
+
+/*close-icon*/
+.cross.close{
+    color:white;
+    opacity:1;
+    font-size: 5rem;
+}
+.close-icon:hover{
+    color: linear-gradient(to right, #f30a0a 0%, #f6d365 51%, #8f2305 100%);
+    opacity: 1;
+}
+
+/*liens vers sections*/
+li{
+    list-style: none;
+}
+.ligne_verticale
+{
+    width:5px;
+    border-left:1px solid gray;
+    height:70px;
+}
+a{
+    color: white;
+    
+}
+a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.links{
+    margin-top:150px;
+}
+
+.row{
+    display: flex;
+    flex: wrap;
+    margin-right: -15px;
+}
+
+.links.col-xl-4{
+    border: none;
+}
+
+        /*menu gauche sur desktop*/
+.categories a{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+        /*menu centre sur desktop*/
+.imgMarques{
+    text-align: center;
+    padding-right: 0px;
+    padding-left: 0px;
+    border-right: 2px solid gray;
+    border-left: 2px solid gray;
+}
+.imgMarques.ul{
+    display: inline-block;
+   
+    padding: 0px;
+}
+        /*menu droite sur desktop*/
+
+
+@media only screen and(max-width:1279px){
+    .order-2{
+        order: 2;
+    }
+    .order-3{
+        order: 3;
+    }
+    .imgMarques{
+        
+        border-right: none;
+        border-left: none;
+        border-top: 2px solid gray;
+        border-bottom: 2px solid gray;
+    }
+    .pages{
+        justify-content: center;
+        
+    }
+
+}
+@media (min-width: 1280px){
+    .col-xl-4:not(.recherche){
+        flex: 33%;
+        max-width: 33%;
+    }
+    .pages{
+    text-align: right;
+    margin-top: 165px;
+    }
+}
+
+
+
+
+
+
+
+
+    /*menu centre sur desktop*/
+
+
+
+    /*menu droite sur desktop*/
+
+.pages a{
+    font-size: 2rem;
+}
