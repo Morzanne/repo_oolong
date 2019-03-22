@@ -1,0 +1,246 @@
+body{
+  font-family: 'Roboto Mono', monospace;
+}
+/*HEADER SCROLLANT*/
+
+.fondscroll{
+    height: 100vh;
+    background-image: url("assets/couv.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment:fixed;
+    position: scroll;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.titre{
+    z-index: 5;
+    font-size: 5rem;
+    color: white;
+    top: 25px;
+    left: 20px;
+    font-weight: 1000;
+}
+
+
+@media all and (max-width:320px){
+    .fondscroll{
+        background-image: url("assets/couv2.jpg");
+        background-size: contain;
+        height: 75vh;
+        background-attachment:fixed;
+        background-repeat: no-repeat;
+
+    }
+
+    .titre{
+        font-size: 3rem;
+        
+    }
+
+}
+.carou{
+  background-size: cover;
+  background-position: center center;
+}
+.article:not(.date){
+  position:relative;
+  height:475px;
+  
+  background-position: center center;
+  background-size: cover;
+  filter: grayscale(1);  
+   
+}
+
+
+.article p{
+  position: absolute;
+  color:white;
+  font-weight: bold;
+  bottom: 0%;
+  
+}
+
+.burger{
+    position:absolute;
+    right:20px;
+    top:20px;
+    width:30px;
+    height:6px;
+    background:white;
+  }
+  
+  .burger::before, .burger::after{
+    content:'';
+    display:block;
+  }
+  .burger, .burger::before, .burger::after {
+  position: fixed;
+  
+  width: 50px;
+  height: 6px;
+  background:white;
+  transition: all 0.3s;
+  }
+  .burger::before {
+  margin-top: -15px;
+  }
+  .burger::after {
+  margin-top: 15px;
+  }
+  .burger:hover{
+    background:transparent;
+  }
+
+  .burger:hover::before{
+    margin-top: 0px;
+    transform: rotate(45deg);
+    background: linear-gradient(330deg, #e05252 0%, #99e052 25%, #52e0e0 50%, #9952e0 75%, #e05252 100%);
+  }
+  .burger:hover::after{
+    margin-top: 0px;
+    transform: rotate(-45deg);
+    background: linear-gradient(330deg, #e05252 0%, #99e052 25%, #52e0e0 50%, #9952e0 75%, #e05252 100%);
+  }
+.sociaux{
+    color:white;
+    font-size: 1.8rem;
+    z-index: 2;
+    position: absolute;
+    bottom: 3%;
+    left: 45%;  
+}
+.socicon-messenger{
+  color: blue;
+  font-size: 5rem;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  
+}
+.biglogo{
+  font-size: 5rem;
+  font-weight: 1000;
+  line-height: 120px;
+  background: linear-gradient(330deg, #e05252 0%, #99e052 25%, #52e0e0 50%, #9952e0 75%, #e05252 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 8%;
+  margin-bottom: 8%;
+
+}
+
+.article span{
+  color: red;
+  filter: none;
+}
+
+
+.article p{
+  position: absolute;
+  color:white;
+  font-weight:1000;
+  bottom: 0%;
+  
+}
+.carte1{
+  background-image: url("assets/arnold.jpg");
+   
+  
+}
+.carte2{
+  background-image: url("assets/robot.png");
+}
+.carte3{
+  background-image: url("assets/hacker.jpg") ;
+}
+.carte4{
+  background-image: url("assets/femme.jpg");
+}
+.carte5{
+  background-image: url("assets/tank.jpg");
+}
+
+
+
+/*HOVER EFFECTS SUR LES ARTICLES*/
+
+
+.article:hover{
+opacity: 1;
+transform: scale(1.1);
+background-image: none;
+background-color: black;
+filter: none;
+transition-duration: 1s;
+z-index: 1;
+}
+.article:hover p{
+
+background: linear-gradient(330deg, #e05252 0%, #99e052 25%, #52e0e0 50%, #9952e0 75%, #e05252 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+/*FRESH BUTTON*/
+.fraicheur{
+  background: white;
+}
+.fraicheur:hover{
+  background: black;
+  color: white;
+  transition: 1s;
+  
+}
+
+/*FOOTER*/
+
+.accueilfooter ul{
+  list-style-type: none;
+  font-size: 4rem;
+  column-count: 2;
+}
+.firstlist{
+  text-align: left;
+  margin-right: 10%;
+}
+.secondlist{
+  text-align: right;
+}
+@media all and (max-width:425px){
+  .accueilfooter li{
+    font-size: 2rem;
+  }
+  .accueilfooter ul{
+    column-count: 1;
+    
+  }
+  .secondlist, .firstlist{
+    text-align:initial;
+
+  }
+  .accueilfooter h1{
+    font-size: 2rem;
+    text-align: justify;
+  }
+
+}
+small{
+  position: absolute;
+  bottom: -11%;
+  left: 0;
+  color: #c100ff;
+  font-size: 1rem;
+  font-weight: 900;
+  font-family: 'Alfa Slab One', cursive;
+  
+}
+.date{
+  font-weight: 100;
+  color: red ;
+  
+}
