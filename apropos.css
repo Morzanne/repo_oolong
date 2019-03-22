@@ -1,0 +1,72 @@
+header h1{
+    font-family: 'Lilita One', cursive;
+    font-size:450%;
+    margin-right: 10%;
+    height: auto;
+}
+
+h2{
+    font-family: 'Anton', sans-serif;
+}
+.menu_burger{
+   
+    padding-left: 1%;
+
+
+}
+.menu_burger img{
+    position: absolute;
+    position: fixed;
+
+    top: 0%;
+    right: 0%;
+    width:5%;
+     height: auto;
+}
+
+.imageflottante{
+    float: left;
+    width:20%;
+    height:20%;
+    margin-top: -5%;
+}
+#paragraphe{
+    font-size: 120%;
+    margin-left: 30% ;
+    margin-right: 30%;
+    margin-top: 5%;
+}
+.petit_titre{
+    margin-top: 10%;
+    font-family: 'Kaushan Script', cursive;
+}
+.para1{
+    font-family: 'Unna', serif;
+}
+.para2{
+    font-family: 'Unna', serif;
+}
+.para3{
+    margin-top: 10%;
+    margin-bottom: 20%;
+    font-family: 'Unna', serif;
+}
+.boule{
+    position: absolute;
+    position: fixed;
+    top: 90%;
+    right: 0%;
+    width:5%;
+     height: auto;
+
+}
+.articles{
+    display: flex;
+}
+
+.oolong{
+    width:5%;
+    height:auto;
+   margin-left: 50%;
+   margin-top: -20%;
+}
